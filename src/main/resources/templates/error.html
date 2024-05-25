@@ -1,0 +1,25 @@
+<!-- error.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal Server Error</title>
+    <style>
+        body { text-align: center; padding: 150px; }
+        h1 { font-size: 50px; }
+        body { font: 20px Helvetica, sans-serif; color: #333; }
+        article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+<article>
+    <h1>Something went wrong!</h1>
+    <div>
+        <p th:text="${info}">Error message here.</p>
+        <ul>
+            <li>Return to the <a href="/">home page</a></li>
+            <li>Click the <a href="javascript:history.back()">Back</a> button</li>
+        </ul>
+    </div>
+</article>
+</body>
+</html>
